@@ -25,6 +25,25 @@ function generatePassword() {
 }
 
 
+document.getElementById("copy-btn1").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(passwordOne.textContent);
+    console.log('Content copied to clipboard');
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+  }
+})
+
+document.getElementById("copy-btn2").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(passwordTwo.textContent);
+    console.log('Content copied to clipboard');
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+  }
+})
+
+
 
 
 

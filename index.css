@@ -1,3 +1,7 @@
+@-ms-viewport{
+    width: device-width;
+  }
+
 body {
     margin: 0;
     background-color: #1F2937;
@@ -47,15 +51,37 @@ p {
 #password-two {
     display: flex;
     width: 80%;
+    flex-wrap: wrap;
 }
 
+#password-one,
+#password-two,
+#copy-btn2,
+#copy-btn1{
+    margin-bottom: 1em;
+}
 .passwords{
     margin: 3em 0 0 0;
 }
 
-#password-one {
-     margin-right: 3em;
+#copy-btn1,
+#copy-btn2{
+    width: 2em;
+    margin-right: 3em;
+    background-color: #55F991;
+    border-style: none;
+    border-radius: 5px;
 }
+
+#copy-btn1:active,
+#copy-btn2:active{
+    background-color:#06b145;
+}
+
+.icon{
+    width: 1.5em;
+}
+
 
 #password-one,
 #password-two {
